@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando os formulários</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Treinando formulários e suas fucionalidades</h1>
+    <p>Estou utilizando este exercício para treinar as funcionalidades que devem estar presentes dentro da tag dos formulários</p>
+    <p>Utilizar esses "comandos" permite definir para onde vão os dados preenchidos, estabeler uma ligação entre o que se pede e o que é preenchido.</p>
+<br>
+    <form action="cadastro.php">
+        <p><label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome: </label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><label for="icidade">Cidade:</label> 
+            <input type="text" name="cidade" id="icidade"></p>
+        <p><label for="inascimento">Data de nascimento:</label> 
+            <input type="text" name="nascimento" id="inascimento"></p>
+        <p><label for="inacionalidade">Nacionalidade:</label> 
+            <input type="text" name="nacionalidade" id="inacionalidade"></p>
+        <p><label for="inaturalidade">Naturalidade:</label> 
+            <input type="text" name="naturalidade" id="inaturalidade"></p>
+        <p><label for="inmae">Nome da mãe: </label>
+            <input type="text" name="nmae" id="inmae"></p>
+        <input type="submit" value="Enviar">
+        </form>
+</body>
+</html>

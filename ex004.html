@@ -15,7 +15,7 @@
     <p>Estou utilizando este exercício para treinar as funcionalidades que devem estar presentes dentro da tag dos formulários</p>
     <p>Utilizar esses "comandos" permite definir para onde vão os dados preenchidos, estabeler uma ligação entre o que se pede e o que é preenchido.</p>
 <br>
-    <form action="cadastro.php">
+    <form action="cadastro.php" autocomplete="off">
         <p><label for="inome">Nome:</label>
             <input type="text" name="nome" id="inome"></p>
         <p><label for="isobrenome">Sobrenome: </label>
@@ -30,7 +30,12 @@
             <input type="text" name="naturalidade" id="inaturalidade"></p>
         <p><label for="inmae">Nome da mãe: </label>
             <input type="text" name="nmae" id="inmae"></p>
+        <p><label for="icpf">CPF/E-mail </label>
+                <input type="text" name="cpf" id="icpf"></p>
+        <p><label for="isenha">Senha: </label>
+                <input type="text" name="senha" id="isenha"></p>
         <input type="submit" value="Enviar">
         </form>
+
 </body>
 </html>

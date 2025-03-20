@@ -14,6 +14,13 @@
     <h1>Treinando formulários e suas fucionalidades</h1>
     <p>Estou utilizando este exercício para treinar as funcionalidades que devem estar presentes dentro da tag dos formulários</p>
     <p>Utilizar esses "comandos" permite definir para onde vão os dados preenchidos, estabeler uma ligação entre o que se pede e o que é preenchido.</p>
+    <p>Existem dois métodos para envio de formulário, sendo eles GET e POST.</p>
+    <p>No metódo GET, os daods aparecem na URL; tem uma capacidade máxima de 3 mil bites, geralmete, utilizado para dados não sensíveis (nomes, sobrenome, altura, peso... etc). Também é utilizado para deixar a URL compartilhável.</p>
+
+    <p>
+        Método POST. Utilizado para campos sensíveis, senhas, endereços, número do cartão. Faz com que os dados não aparecem na URL e são utilizados caso vá trabalhar com mais de 3 mil bites.
+        O FATO DE UTILIZAR <em>POST</em> NÃO PROTEGE OS DADOS. O QUE VAI PROTEGER É A CRIPTOGRAFIA (ESTUDAR EM HTTPS)
+    </p>
 <br>
     <form action="cadastro.php" autocomplete="off">
         <p><label for="inome">Nome:</label>

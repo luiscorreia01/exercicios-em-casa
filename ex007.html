@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo mais sobre formulários</title>
+    <style> 
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Atributos para formulários</h1>
+    <br>
+    <p>Usando os atributos <em><strong>REQUIRED, AUTOCOMPLETE, MINLENGTH, MAXLENGTH, PLACEHOLDER E SIZE</strong></em></p>
+    <br>
+    <p><strong>REQUIRED</strong> - usar para deixar o preenchimento dos campos obrigatórios, para que seja enviado ao php (ou outra linguagem escolhida)</p>
+    <p><strong>AUTOCOMPLETE</strong> - deixar a opção "on" dentro da tag <em>"form"</em> permite que na tag "input" se indique o autocomplete e estabeleça um link com o navegador</p>
+    <p><strong>MINLENGTH e MAXLENGTH</strong> - Usados para definir o número mínimo e máximo de carcteres/letras permitidos dentro de cada caixa (Devem ser configurados dentro da tag "input")</p>
+    <p><strong>PLACEHOLDER</strong> - Permite colocar uma "dica" dentro das caixas. (Deve ser configurado dentro da tag "input")</p>
+    <p><strong>SIZE </strong>- Utilizado para alterar o tamanhodas caixas. Esta confuguração é utilizada dentro do HTML.(Deve ser configurado dentro da tag "input") </p>
+    
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p><label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" autocomplete="username" required minlength="5" maxlength="12" size="12" placeholder="nome do usuário">
+        </p>
+
+        <p><label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" autocomplete="current-password" required maxlength="8" size="8" placeholder="max 8 carácteres">
+        </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>

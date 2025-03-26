@@ -22,12 +22,21 @@
             padding: 20px;
             color: white;
         }
-        fieldset {
+        fieldset#dados {
             margin: 30px 10px 5px 10px;
             padding: 10px;
-            height: 200px;
+            height: 600px;
             width: 600px;
             background-color: lightgray;
+        }
+
+        fieldset#esportes {
+            border: 0px;
+            
+        }
+
+        legend {
+            margin: 10px;
         }
        
         p {
@@ -40,29 +49,55 @@
         <h1>Aplicando novos atributos nos formulários</h1>
     </header>
     <form action="cadastro.php" method="get" autocomplete="on">
-        <fieldset>
+        <fieldset id="dados">
             <legend>Dados pessoais</legend>
             <p>
-                <label for="inome">Nome</label>
-                <input type="text" name="nome" id="inome" required minlength="5" maxlength="15" autocomplete="username">
-                <label for="isnome">Sobrenome</label>
-                <input type="text" name="snome" id="isnome" required>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required minlength="5" maxlength="20" autocomplete="username" placeholder="nome do usuário">
+                <label for="isobn">Sobrenome:</label>
+                <input type="text" name="sobn" id="isobn">
+                
             </p>
             <p>
-                <label for="iemail">E-mail</label>
-                <input type="email" name="email" id="iemail" required autocomplete="email">
-                <label for="inasc">Data de Nascimento</label>
-                <input type="date" name="nasc" id="inasc" required value="2025-03-25">
+                
+                <input type="radio" name="sexo" id="isxmas">
+                <label for="isdxmas">Masculino</label>
+                <input type="radio" name="sexo" id="isxfem">
+                <label for="isxfem">Feminino</label>
             </p>
             <p>
-                <label for="itel">Telefone</label>
-                <input type="tel" name="tel" id="itel" required placeholder="(xx)xxxxx-xxxx" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email" maxlength="30">
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" required autocomplete="tel" placeholder="(xx)xxxxx-xxxx" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
             </p>
-        
+            <p>
+                <label for="idata">Data de Hoje:</label>
+                <input type="date" name="data" id="idata" required value="2025-03-26" >
+                <label for="imed">Média do Aluno:</label>
+                <input type="number" name="media" id="imed" required step="0.25" min="4" max="10" >
+            </p>
+            <p>
+                <fieldset id="esportes">
+                    <legend>Esportes Praticados</legend>
+                    <input type="checkbox" name="esfut" id="iesfu"> 
+                    <label for="iesfut">Futebol</label><br>
+                    <input type="checkbox" name="esvol" id="iesvol"> 
+                    <label for="iesvol"> Vôlei</label>
+                </fieldset>
+            </p>
+            <p>
+                <label for="icor">Selecione sua cor favorita:</label>
+                <input type="color" name="cor" id="icor"> <br>
+                <label for="isat">Nível de satisfação com a escola:</label>
+                <input type="range" name="sat" id="isat" min="1" max="10"><br>
+                <label for="ifoto">Envie uma foto sua:</label>
+                <input type="file" name="foto" id="ifoto">
+            </p>
         </fieldset>
         <br>
-        <input type="submit" value="Enviar" id="botoes">
-        <input type="reset" value="Limpar" id="botoes">
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
     </form>
 </body>
 </html>

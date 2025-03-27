@@ -25,19 +25,21 @@
         fieldset#dados {
             margin: auto;
             margin-top: 10px;
-            padding: 10px;
-            width: 600px;
-            height: 800px;
+            min-width: 450px;
+            max-width: 1200px;
+            
             background-color: lightgray;
         }
 
+        
         fieldset#esportes {
             border: 0px;
             
         }
 
         p {
-            padding: 20px;
+            padding: 20px 0px 20px 0px;
+            
         }   
     </style>
 </head>
@@ -119,7 +121,7 @@
                 </p>
                 <p>
                     <label for="imsg">Deixe sua mensagem:</label><br><br>
-                    <textarea name="msg" id="imsg" cols="80" rows="6"></textarea>
+                    <textarea name="msg" id="imsg" cols="60" rows="6"></textarea>
                 </p>
         
                 <input type="submit" value="Enviar">

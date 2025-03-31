@@ -45,9 +45,6 @@ section#redes-sociais {
     
 }
 
-img {
-
-    margin: 10px;
-    width: 60px;
-    border-radius: 50%;
+picture > img {
+    width: 100vw;
 }

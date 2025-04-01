@@ -47,6 +47,7 @@ header > h1 {
     padding-top: 50px;
     margin-bottom: 20px;
     font-size: 3em;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.288);
 }
 
 header > p {
@@ -56,11 +57,13 @@ header > p {
     text-align: center;
     max-width: 500px;
     margin: auto;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.288);
 }
 
 nav {
     background-color: var(--cor5);
     padding: 10px;
+    box-shadow:  0px 7px 7px rgba(0, 0, 0, 0.575);
     
 
 }
@@ -70,6 +73,7 @@ nav > a {
     text-decoration: none;
     font-weight: bolder;
     padding: 10px;
+    transition-duration: 0.5s;
     
 }
 
@@ -127,6 +131,16 @@ div.video {
     transform: translate(-50%, -50%);
     width: 90%;
     height: 90%;
+}
+
+aside {
+    background-color: var(--cor1);
+    margin-bottom: 10px;
+    border-radius: 10px 10px 5px 5px ;
+}
+
+aside > ul {
+    padding: 20px;
 }
 
 

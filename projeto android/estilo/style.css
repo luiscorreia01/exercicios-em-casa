@@ -30,12 +30,12 @@
 body{
     background-color: var(--cor0);
     font-family: var(--fonte-padrao);
+    
 }
 
 header {
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
-    width: 100vw;
-    height: 200px;
+    min-height: 200px;
     margin: 0px;
     padding: 10px;
 }
@@ -45,11 +45,17 @@ header > h1 {
     font-family: var(--fonte-destaque);
     text-align: center;
     padding-top: 50px;
+    margin-bottom: 20px;
+    font-size: 3em;
 }
 
 header > p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
     color: white;
     text-align: center;
+    max-width: 500px;
+    margin: auto;
 }
 
 nav {
@@ -70,7 +76,7 @@ nav > a {
 nav a:hover {
     background-color: var(--cor2);
     color: var(--cor5);
-    border-radius: 5%;
+    border-radius: 5px;
     
     
 }
@@ -100,26 +106,30 @@ main h2 {
     font-family: var(--fonte-android);
 }
 
-div.video {
-    
-    background-color: var(--cor4);
-    margin: 0px -20px 30px;
-    padding: 20px;
-    position: relative;
-    padding-bottom: 58%;
-    
+main h3 {
+    background-color: var(--cor5);
+    padding: 5px;
+    border-radius: 5px 5px 0px 0px ;
+    color: white;
 }
 
-div.video > iframe {
-   position: absolute;
-   top: 5%;
-   left: 5%;
-   width: 90%;
-   height: 90%;
-   
-   
-    
+div.video {
+    background-color: var(--cor5);
+    position: relative;
+    min-height: 500px;
+    margin: 0px -20px 30px;
 }
+
+.video > iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+}
+
+
 
 footer {
     background-color: var(--cor5);

@@ -6,35 +6,52 @@
     <title>Criando um Formulário</title>
 </head>
 <body>
-    <h1>Criando Formulário</h1>
+    <h1>Criando formulário</h1>
     <form action="cadastro.php" method="post" autocomplete="on">
-        <p>
-            <fieldset>
-                <legend>Dados pessoais</legend>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
                 <label for="inome">Nome:</label>
-                <input type="text" name="nome" id="inome" required autocomplete="username">
+                <input type="text" name="nome" id="inome" required minlength="5" maxlength="20" autocomplete="username">
                 <label for="isobn">Sobrenome:</label>
                 <input type="text" name="sobn" id="isobn" required>
 
-                <label for="isexmasc">Masculino</label>
-                <input type="radio" name="sexo" id="isexmasc" required>
-                <label for="isexo">Feminino</label>
-                <input type="radio" name="sexo" id="isexfem" required>
+                <label for="">Gênero:</label>
+                <input type="radio" name="sex" id="isexmasc" required>
+                <label for="isex">Masculino</label>
+                <input type="radio" name="sex" id="isexfem" required>
+                <label for="isexfem">Feminino</label>
+            </p>
+            <p>
+               <label for="tel">Telefone:</label>
+               <input type="tel" name="tel" id="itel" required autocomplete="tel" placeholder="(xx)xxxxx-xxxx" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
 
-                <p>
-                    <label for="itel">Telefone:</label>
-                    <input type="tel" name="tel" id="itel" required placeholder="(xx)xxxxx-xxxx" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
-                    <label for="isen">Senha:</label>
-                    <input type="password" name="Senha" id="isen" required autocomplete="current-password">
-                </p>
+               <label for="iest">Estado:</label>
+               <input type="text" name="est" id="iest" list="listest" required>
+               <datalist id="listest">
+                <option value="MG"></option>
+                <option value="SP"></option>
+                <option value="MT"></option>
+               </datalist>
+            </p>
 
-                <p>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpar">
-                </p>
-            </fieldset>
-
-        </p>
+            <p>
+                <label for="iprof">Profissão na empresa:</label>
+                <select name="prof" id="iprof" required>
+                    <option value="">--- Escolha ---</option>
+                    <option value="ADM">Administrador</option>
+                    <option value="DEV">Desenvolvedor</option>
+                    <option value="RH">Recursos Humanos</option>
+                </select>
+                <label for="isat">Nível de satisfação com a empresa:</label>
+                <input type="range" name="sat" id="isat" required min="0" max="10" value="10">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+        
     </form>
 </body>
 </html>

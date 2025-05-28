@@ -37,7 +37,7 @@ main {
 }
 
 section {
-    height: 600px;
+    height: 630px;
     width: 375px;
     background-color: var(--cor1);
     border-radius: 10px;
@@ -47,7 +47,7 @@ img {
     border-radius: 50%;
     display: block;
     margin: auto;
-    width: 100px;
+    width: 110px;
     margin-top: 30px;
     margin-bottom: 30px;
     
@@ -61,12 +61,14 @@ h1 {
     margin-bottom: 10px;
 } 
 
-p.especial {
+h3 {
     text-align: center;
     color: var(--cor3);
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
+    margin-top: 5px;
 }
+
 
 p {
     color: white;
@@ -85,8 +87,9 @@ a {
     background-color: var(--cor0);
     color: white;
     font-weight: bold;
+    font-size: 1.1em;
     width: 70%;
-    height: 20px;
+    height: 25px;
     margin-top: 15px;
     padding: 10px;
     text-align: center;

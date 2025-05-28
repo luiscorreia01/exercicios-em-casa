@@ -21,6 +21,9 @@
 
 body {
     background-color: var(--cor2);
+    height: 100%;
+    width: 100%;
+    
 }
 
 main {
@@ -53,7 +56,7 @@ img {
 h1 {
     text-align: center;
     color: white;
-    font-size: 1.6em;
+    font-size: 1.8em;
     font-weight: normal;
     margin-bottom: 10px;
 } 
@@ -62,12 +65,33 @@ p.especial {
     text-align: center;
     color: var(--cor3);
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 p {
     color: white;
     text-align: center;
     margin-bottom: 15px;
+}
+
+div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    background-color: var(--cor0);
+    color: white;
+    font-weight: bold;
+    width: 70%;
+    height: 20px;
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    
 }
 

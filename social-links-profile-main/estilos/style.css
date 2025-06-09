@@ -89,7 +89,7 @@ a {
     font-weight: bold;
     font-size: 1.1em;
     width: 70%;
-    height: 25px;
+    flex-basis: 25px;
     margin-top: 15px;
     padding: 10px;
     text-align: center;
